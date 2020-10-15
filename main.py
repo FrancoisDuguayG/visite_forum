@@ -20,6 +20,7 @@ FORUM_URL = "https://sitescours.monportail.ulaval.ca/ena/site/forums?idSite=1197
 logging.basicConfig(format='%(asctime)s %(message)s')
 
 options = Options()
+# changer à False, pour voir le browser à l'oeuvre
 options.headless = True
 driver = webdriver.Chrome(CHROMEDRIVER_PATH, options=options)
 driver.implicitly_wait(3)
